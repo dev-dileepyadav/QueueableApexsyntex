@@ -1,0 +1,11 @@
+public class QueueableStracture implements Queueable{
+    //system.enqueuejob(new QueueableStracture()); call the Queueable class
+    public void execute(Queueablecontext bc){
+        System.debug('Execute method');
+        
+        // chaning other queueable class
+        // Queueable1 is the name of other class
+        system.enqueuejob(new Queueable1());
+    }
+
+}
